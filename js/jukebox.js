@@ -15,20 +15,20 @@ function randomNumber() {
 }
 
 function menu() {
-  $('#menu').on('click', function(e) {
+  $('#menu').on('click', function(){
     $('#menuOptions').html("You can play a song, pause a song, or view all the songs");
   });
 }
 
 function play() {
-  $('#play').on('click', function(e) {
+  $('#play').on('click', function() {
     $('#songPlaying').html("now playing " + songToPlay + " by " + theArtist);
-    return "now playing " + songToPlay + " by " + theArtist;
+
   });
 }
 
 function pause() {
-  $('#pause').on('click', function(e) {
+  $('#pause').on('click', function() {
     $('#songPaused').html(songToPlay + " is paused");
   });
 }
